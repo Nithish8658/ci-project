@@ -1,5 +1,7 @@
 input=int(input("Enter a number: "))
-input=int(input)
+if input!= int:
+    print("Please enter a valid integer.")
+    exit()
 if input > 0:
     print("The number is positive.")
 if input % 2 == 0:
