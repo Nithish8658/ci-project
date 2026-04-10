@@ -1,10 +1,19 @@
-input=int(input("Enter a number: "))
-if input!= int:
+raw = input("Enter a number: ")
+try:
+    number = int(raw)
+except ValueError:
     print("Please enter a valid integer.")
-    exit()
-if input > 0:
-    print("The number is positive.")
-if input % 2 == 0:
-    print("The number is even.")    
+    exit(1)
+if number == 0:
+    print("The number is zero.")
 else:
-    print("The number is odd.")
+    if number < 0:
+        print("The number is negative.")
+    else:
+        print("The number is positive.")
+
+    if number % 2 == 0:
+        print("The number is even.")
+    else:
+        print("The number is odd.")
+
