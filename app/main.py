@@ -3,7 +3,7 @@ try:
     number = int(raw)
 except ValueError:
     print("Please enter a valid integer.")
-    exit(1)
+    exit()
 if number == 0:
     print("The number is zero.")
 else:
